@@ -14,12 +14,12 @@ body{background-image: url(./image/stadium2.gif);
 }
 li a{
     text-decoration: none;
-    color:#ffffff;
+    color:white
 }
 li a:hover{
     font-size: 3.1vw;
-    color: #fd5949;
-    
+    border-bottom: 2px #0e3a5b solid ;
+   
 }
 ul{
     list-style: none;
@@ -75,12 +75,17 @@ ul{
     justify-content: center;
 
 }
+.imagen-rayo{
+    position: relative;
+
+}
 .titulo__h1{
     display: inline-block;
     margin: 0 0.5rem;
 }
   
 .slide-bottom {
+    text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.39);
 	-webkit-animation: slide-bottom 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-bottom 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -247,10 +252,11 @@ footer{
     .menu__lista{
         padding: 0 8px;
         font-size: 2vw;
+        
     }
     li a:hover{
-        font-size: 2.5vw;
-        color: #fd5949;
+        font-size: 2.2vw;
+        border-bottom: 2px #0e3a5b solid;
     }
     .icon {
         width: 40px;
