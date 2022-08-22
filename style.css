@@ -45,6 +45,9 @@ li a:hover{
 ul{
     list-style: none;
 }
+p{
+    font-size: 0.8em;
+}
 
 /* header */
 
@@ -357,6 +360,8 @@ margin: 30px;
     height: auto;
     margin: 10px;
     border-radius: 15px;
+    box-shadow: 5px 8px 12px black;
+    overflow: hidden;
 
 }
 .cards:hover{
@@ -402,4 +407,89 @@ margin: 30px;
 }
 .cards a:hover{
     transform: scale(1.05);
+}
+
+/* -----------NOTICIAS------------ */
+
+.noticias{
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: repeat(3,auto);
+
+    grid-template-areas: 
+    "noticia1 noticia3 aside"
+    "noticia2 noticia4 aside"
+    "banner banner banner ";
+}
+.noticias__articulo1{
+    grid-area: noticia1;
+
+}
+
+.noticias__articulo2{
+    grid-area: noticia2;
+}
+.noticias__articulo3{
+    grid-area: noticia3;
+}
+.noticias__articulo4{
+    grid-area: noticia4;
+}
+.aside{
+    grid-area: aside;
+}
+.carusel{
+    grid-area: banner;
+}
+.articulos{
+    margin: 15px;
+    border: white solid 2px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+
+}
+.articulos h2 {
+    text-align: center;
+    background-color: #131b27;
+    color: white;
+    padding: 10px;
+}
+.articulos h4{
+    text-align: justify;
+    color: #0e4961;
+}
+.articulos p{
+    text-align: justify;
+    background-color: white;
+    color: black;
+    margin: 10px;
+}
+figure{
+    display: inline-block;
+    border: solid 2px black;
+    position: relative;
+}
+figure img{
+    width: 100%;
+}
+figcaption{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.607);
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+
+
+
+.afa{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
 }
