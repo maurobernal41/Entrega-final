@@ -413,13 +413,15 @@ margin: 30px;
 
 .noticias{
     display: grid;
-    grid-template-columns: 40% 40% 20%;
-    grid-template-rows: repeat(3,auto);
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5,auto);
 
     grid-template-areas: 
-    "noticia1 noticia3 aside"
-    "noticia2 noticia4 aside"
-    "banner banner banner ";
+    "noticia1" 
+    "noticia3"
+    "noticia2"
+    "noticia4"
+    "banner ";
 }
 .noticias__articulo1{
     grid-area: noticia1;
@@ -449,7 +451,7 @@ margin: 30px;
 
 }
 .articulos h2 {
-    text-align: center;
+    text-align: start;
     background-color: #131b27;
     color: white;
     padding: 10px;
@@ -484,7 +486,9 @@ figcaption{
     font-size: 1.4em;
     text-align: center;
 }
-
+.tendencias1{
+    border: solid black 3px;
+}
 
 
 
@@ -493,3 +497,203 @@ figcaption{
     height: 200px;
     object-fit: cover;
 }
+
+
+/* ----------tablet 992px ------------ */
+
+@media (min-width: 780px )and (max-width:1023px ){
+    .noticias{
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: repeat(3,auto);
+
+        grid-template-areas: 
+        "noticia1 noticia3"
+        "noticia2 noticia4"
+        "banner banner    ";
+    }
+    .noticias__articulo1{
+        grid-area: noticia1;
+
+    }
+
+    .noticias__articulo2{
+        grid-area: noticia2;
+    }
+    .noticias__articulo3{
+        grid-area: noticia3;
+    }
+    .noticias__articulo4{
+        grid-area: noticia4;
+    }
+    .aside{
+        grid-area: aside;
+}
+.carusel{
+    grid-area: banner;
+}
+}
+
+
+
+
+
+
+/* --------laptop y mas--------- */
+@media(min-width: 1024px )and (max-width:1500px){
+    .noticias{
+        display: grid;
+        grid-template-columns: 40% 40% 20%;
+        grid-template-rows: repeat(3,auto);
+
+        grid-template-areas: 
+        "noticia1 noticia3 aside"
+        "noticia2 noticia4 aside"
+        "banner banner banner";
+    }
+    .noticias__articulo1{
+        grid-area: noticia1;
+
+    }
+
+    .noticias__articulo2{
+        grid-area: noticia2;
+    }
+    .noticias__articulo3{
+        grid-area: noticia3;
+    }
+    .noticias__articulo4{
+        grid-area: noticia4;
+    }
+    .aside{
+        grid-area: aside;
+}
+.carusel{
+    grid-area: banner;
+}
+
+}
+
+
+
+/* ---------CONTACTO----------- */
+.contact_form{  
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px; 
+  }
+  
+  
+  input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #7e96ef; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #7e96ef; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+    float: center;  
+  }
+  
+  .boton{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #7e96ef; 
+    border-color: #7e96ef; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+  
+  
+  button p{
+    color: #fff; 
+  }
+  
+  
+  span{
+    color: #455a93; 
+  }
+  
+  
+  .aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+  }
+  
+  
+  h1{
+    font-size: 39px;  
+    text-align: letf; 
+    padding-bottom: 20px; 
+    color: #455a93;
+  }
+  
+  
+  h3{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e;   
+  }
+  
+  
+  p{
+    font-size: 14px; 
+    color: #0e0e0e; 
+  }
+  
+  
+  ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  .formulario input:focus{
+    outline:0;
+    border: 1px solid #172642;
+  }
+  
+  
+  .formulario textarea:focus{
+    outline:0;
+    border: 1px solid #172642;
+  }
+  
